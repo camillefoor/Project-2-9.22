@@ -1,0 +1,201 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+  padding:0;
+  text-align:center;
+  font-family: 'Cormorant SC', serif;
+  color: #3a3a3a;
+  background:#f7f5f0;
+  line-height:1.6;
+}
+
+p {
+  font-size:.95em;
+  margin-bottom:1.8em;
+}
+
+img {
+  max-width:100%;
+}
+
+
+/*Link Styles*/
+a {
+  text-decoration:none;
+  color: darkgrey;
+}
+
+a:hover {
+  color:black;
+}
+/* ================
+Base layout Styles
+==================*/
+
+/* ----Navigation --*/
+.name {
+  font-size:3em;
+  margin:0px;
+}
+
+.main-nav {
+  display:block;
+  list-style:none;
+  padding:20px;
+  margin-top:10px;
+}
+
+.name a,
+.main-nav a {
+  display:block;
+  text-align:center;
+  padding:10px 15px;
+}
+
+.main-nav a {
+  font-size:.95em;
+  text-transform:uppercase;
+}
+
+/* ----Layout Containers --*/
+
+.main-header {
+  padding-top:.5em;
+  padding-bottom:.5em;
+}
+
+.container li {
+  list-style:none;
+}
+
+.col {
+  padding-right:1em;
+  padding-left:1em;
+}
+
+p {
+  padding-right:1em;
+  padding-left: 1em;
+}
+
+.main-footer {
+  padding:2em 0;
+  margin-top:30px;
+}
+
+.contact {
+  font-size:1.2em;
+  text-transform:uppercase;
+}
+.contact p {
+  margin: 0;
+  font-size:.95em;
+  text-transform:none
+}
+
+.main-footer {
+ padding:2em 0;
+ margin-top:30px;
+ overflow:hidden;
+}
+.footer-name {
+  float: left
+  
+}
+
+.back {
+  float:right;
+  list-style:none;
+  margin:0;
+}
+/* ----Float clearfix --*/
+
+.clearfix::after {
+  content:" ";
+  display:table;
+  clear:both;
+}
+
+/* ================
+Media Queries
+==================*/
+
+@media (min-width: 769px) {
+
+body {
+  padding-top: 68px;
+}
+
+.main-header {
+  width: 100%;
+  top: 0;
+}
+
+.container {
+  width:90%;
+  margin: 0 auto;
+}
+
+.name,
+.col {
+  float:left;
+}
+.profile {
+  margin-left:25%;
+  margin-right:25%;
+}
+.primary,
+.secondary,
+.tertiary {
+
+  width: 48%;
+}
+
+.main-nav {
+  float:right;
+}
+
+.main-nav li {
+  display:inline-block;
+  margin-left: 15px;
+}
+
+
+.clearfix::after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.wrap {
+  min-height: calc(120vh - 155.55px);
+}
+
+}
+
+@media (min-width: 1025px) {
+
+.container {
+  width:80%;
+  max-width:1150px;
+}
+
+.profile {
+  display:inline-block;
+}
+.primary,
+.secondary,
+.tertiary {
+  width: 33.3333%;  
+}
+
+.main-footer {
+  margin-left: 10%;
+  margin-right:10%;
+}
+}
+
+
+
